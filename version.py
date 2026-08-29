@@ -1,9 +1,9 @@
-short_name = "godot"
-name = "Godot Engine"
+short_name = "viaduct"
+name = "Viaduct Engine"
 major = 4
 minor = 7
 patch = 2
 status = "stable"
-module_config = ""
-website = "https://godotengine.org"
+module_config = "viaduct"
+website = "https://github.com/Viaduct-Engine"
 docs = "4.7"
