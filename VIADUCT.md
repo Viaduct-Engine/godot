@@ -3,7 +3,7 @@
 This repository is a **thin downstream fork** of [godotengine/godot](https://github.com/godotengine/godot).
 It carries Viaduct's branding, version identifiers, and the small set of core patches
 that genuinely cannot live outside the engine tree. Everything else — gameplay and
-editor features — lives in the separate `viaduct-modules` repository and is compiled in
+editor features — lives in the separate `modules` repository (Viaduct-Engine/modules) and is compiled in
 via `scons custom_modules=...`.
 
 Keeping the delta against upstream small is the whole point: the smaller the diff, the
@@ -50,7 +50,7 @@ git push --force-with-lease origin viaduct
 
 Use `rebase` while the branch is essentially single-maintainer; switch to `merge` if a
 team works `viaduct` concurrently. After the rebase, bump the pinned `godot/` submodule
-SHA in the `viaduct-engine` superproject deliberately and let CI build it.
+SHA in the `engine` superproject (Viaduct-Engine/engine) deliberately and let CI build it.
 
 CI runs this rebase-onto-latest-stable plus a build as an early-warning signal only — it
 never auto-merges the result.
@@ -59,4 +59,4 @@ never auto-merges the result.
 
 Issues are tracked in Nixli (project `VIA`). Branch name = the exact ticket key
 (`VIA-42`, no prefix), branched from `viaduct`. See the repo-root `CLAUDE.md` in the
-`viaduct-engine` superproject for the full status/PR conventions.
+`engine` superproject (Viaduct-Engine/engine) for the full status/PR conventions.
